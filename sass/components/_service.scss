@@ -1,0 +1,43 @@
+/*==========================
+        ABOUT CSS STERT 
+===========================*/ 
+#service{
+  .about_head{
+    h3{
+      margin-top: 20px;
+      font-size: 35px;
+      font-weight: 500;
+      color: $h_col;
+      font-family: $main_font;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+  }
+  .about_item{
+    padding: 55px 55px 65px;
+    border: 2px solid #e2e3e2;
+    
+    
+    h3{
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        color: $h_col;
+        font-family: $other_font;
+        text-transform: uppercase;
+    }
+    p{
+      margin-top: 15px;
+      font-weight: 500;
+      color: $h_col;
+      font-family: $other_font;
+      font-size: 11px;
+      line-height: 20px;
+       
+
+    }
+  }
+}
+/*==========================
+        ABOUT CSS ENDS 
+===========================*/ 

@@ -1,0 +1,108 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+*,*::after,::before{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a,a:hover{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0;
+    margin: 0;
+    line-height: 0.8;
+}
+
+/*==========================
+        COMMON CSS STERT 
+===========================*/ 
+#banenr{
+    background: url(../images/banner.jpg) no-repeat center / cover;
+    padding: 250px 0;
+    position: relative;
+    z-index: 9;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(76, 75, 79, 0.8);
+        z-index: -9;
+    }
+    .banner_text{
+        h1{
+            font-family: $main_font;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+            font-size: 35px;
+            line-height: 35px;
+        }
+        p{
+            font-family: $other_font;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: capitalize;
+            color: $h_col;
+            margin: 15px 0;
+        }
+        a{
+            font-family: $other_font;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 50px;
+            text-transform: capitalize;
+            color: white;
+            width: 155px;
+            text-align: center;
+            background: orange;
+            position: relative;
+            z-index: 9;
+            &:hover{
+                &::before{
+                    right: unset;
+                    left: 0;
+                    width: 100%;
+                }
+            }
+            &::before{
+              @include btn;
+            }            
+            &:hover{
+                &::after{
+                   right: 0;
+                   left: unset;
+                   width: 50%;
+                }
+            }
+            &::after{
+               position: absolute;
+               content: '';
+               height: 100%;
+               width: 0;
+               position: absolute;
+               top: 0;
+               right: unset;
+               left: 0;
+               z-index: -9;
+               background-color: yellowgreen;
+               transition: all linear 0.4s;
+
+            }            
+
+        }
+    }
+}
+/*==========================
+        COMMON CSS ENDS 
+===========================*/ 

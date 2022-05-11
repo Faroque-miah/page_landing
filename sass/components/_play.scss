@@ -1,0 +1,68 @@
+/*==========================
+        PLAY  CSS STERT 
+===========================*/ 
+#play{
+    padding: 80px;
+    .play_text{
+        h3{
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 500;
+            color: $h_col;
+            font-family: $other_font;
+            text-transform: uppercase;
+        }
+        h2{
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 500;
+            color: $h_col;
+            font-family: $other_font;
+            margin-bottom: 20px;
+             
+        }
+    }    
+    
+}
+
+
+ #vedio{
+    //  background: url(../images/play.png) no-repeat center / cover;
+     background: transparent;
+.vedioeeee_overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 80px 0 230px;
+    .vedio_text{
+        h3{
+           
+           font-size: 35px;
+           font-weight: 700;
+           white-space: 1px;
+            color: $main_col;
+           font-family: $other_font;
+           text-transform: uppercase;
+           transition: all linear 0.4s;
+           margin-bottom: 25px;
+        }
+    }
+    .vedio_icon{
+       align-content: center;
+        i{
+            font-size: 30px;
+            font-weight: 700;
+            height: 70px;
+            width: 70px;
+            background-color: $main_col;
+            border-radius: 50%;
+            line-height: 70px;
+        }
+    }
+}
+ }
+ 
+ 
+/*==========================
+        PLAY CSS ENDS 
+===========================*/ 
+
+ 

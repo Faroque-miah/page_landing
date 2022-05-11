@@ -1,0 +1,59 @@
+/*==========================
+        COMMON CSS STERT 
+===========================*/ 
+#blog{
+    padding: 40px 0 80px;
+    background-color: #f1f1f1;
+    margin: 80px 0 !important;
+   .work_menu{
+     .menu_mix{
+        box-shadow: 0 0 8px 0 gray ;
+         width: 80%;
+         margin-bottom: 20px;
+         margin: 20px auto;
+         text-align: center;
+    
+           
+        li{
+            font-family: $other_font;
+            font-weight: 700;
+             color: $h_col;
+             width: 25%;
+            background-color: #f1f1f1;
+             float: left;
+             padding: 12px 20px;
+         
+              
+          }
+          li.active{
+            background-color: #ff517b;
+        
+         }
+       
+    }
+       }
+       .design_img{
+          width: 25% !important;
+           img{
+            width: 100%;
+            mix-blend-mode: luminosity;
+            transition: transform 500ms ease, mix-blend-mode 500ms ease;
+            transform: scale(1);
+             
+           }
+           
+               img{
+                   &:hover{
+                    transform: scale(1);
+                       mix-blend-mode: normal;
+                       box-shadow: 0 0 8px 0 rgba(255, 81, 122, 0.705);
+                   }
+               }
+           
+       }
+ 
+    }
+/*==========================
+        COMMON CSS ENDS 
+===========================*/ 
+

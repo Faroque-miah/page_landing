@@ -1,0 +1,143 @@
+/*==========================
+        testinonial CSS STERT 
+===========================*/
+#testi{
+    // background: linear-gradient(to right,#ff7479,#ffc373);
+    .testi_slider{
+        .testi_item{
+            .shape{
+                height: 100px;
+                width: 100%;
+                
+            }
+            .testi_head{
+                padding:  0 0 40px;
+                background-color: #f1f1f1;
+                position: relative;
+                .testi_img{
+                    position: absolute;
+                    top: -18%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+              
+                .testi_text{
+                    p{
+                        font-weight: 400;
+                        color: #8c8c8c;
+                        font-family: $other_font;
+                        font-size: 18px;
+                        line-height: 20px;
+                        font-weight: 500;
+                        font-style: italic;
+                        padding-top: 70px;
+                         padding-left: 30px;
+                         padding-right: 30px;
+                         
+                    }
+                    h3{
+                        font-size: 22px;
+                        font-weight: 500;
+                        color: $h_col;
+                        font-family: $other_font;
+                        margin-bottom: 10px;
+                        margin-top: 15px;
+                    }
+                    h4{
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $h_col;
+                        font-family: $other_font;
+                        margin-bottom: 20px; 
+                    }
+                    ul{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 70px;
+                        .op{
+                            opacity: 0.5;
+                        }
+                        li{
+                            i{
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+ 
+        
+        
+    .slick-dots{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 35px;
+    
+        li{
+            height: 12px;
+            width: 12px; 
+            border: 1px solid #ff517b;
+            margin-right: 10px;
+            display: inline-block;
+            border-radius: 50%;
+            cursor: pointer;
+            button{
+                font-size: 0;
+                border: none;
+                outline: 0;
+            }
+        }
+        li.slick-active{
+            background-color: #ff517b;
+        }
+     }      
+        }
+ 
+ 
+/*==========================
+        testinonial CSS ENDS 
+===========================*/ 
+
+
+
+.star_shape{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: -50px;
+        height: 15px;
+        width: 15px;
+        border: 2px solid $main_col;
+        transform: rotate(45deg);
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 100px;
+        right: -50px;
+        height: 15px;
+        width: 15px;
+        border: 2px solid $main_col;
+        transform: rotate(45deg);
+        animation: golla  3s infinite alternate linear;
+       
+    }
+}
+ 
+@keyframes golla{
+    0%{
+        transform: rotate(45deg);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+    }
+
+}

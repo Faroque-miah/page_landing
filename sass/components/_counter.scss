@@ -1,0 +1,85 @@
+/*==========================
+        COUBTER CSS STERT 
+===========================*/ 
+#counter{
+   transform: translateY(-50%);
+   z-index: 9999999999;
+  
+   .counter_item{
+       background-color: #f3f2f2;
+       padding: 70px 0;
+       
+   }
+   .golla{
+       overflow: hidden;
+       position: relative;
+       &::before{
+           content: '';
+           position: absolute;
+           height: 80px;
+           width: 80px;
+           border: 15px solid $main_col;
+           border-radius: 50%;
+           left: -36px;
+           top: -24px;
+           animation: gulgol 1.5s linear   infinite alternate forwards;
+       }
+   }
+   .golla_2{
+       overflow: hidden;
+       position: relative;
+       &::before{
+           content: '';
+           position: absolute;
+           height: 80px;
+           width: 80px;
+           border: 15px solid $main_col;
+           border-radius: 50%;
+           right: -26px;
+           bottom: -24px;
+       }
+   }
+    .counter_icon{
+         
+        i{
+            font-size: 45px;
+            font-weight: 500;
+            color: $h_col;
+        }
+    }
+    .counter_text{
+        h3{
+            font-family: $other_font;
+            font-size: 40px;
+            font-weight: 700;
+            color: $h_col;
+            margin: 20px 0;
+            
+        }
+        p{
+            font-family: $other_font;
+            font-size: 18px;
+            font-weight: 700;
+            color: $h_col;
+        }
+        .plash{
+            color:  $main_col; 
+            font-size: 20px;
+            display: inline-block;
+        }
+    }
+}
+@keyframes gulgol{
+    0%{
+        transform: translateX(15px);
+        border-color: orangered;
+    }
+    100%{
+        transform: translateY(-10px);
+        border-color: orange;
+       
+    }
+}
+/*==========================
+        COUBTER CSS ENDS 
+===========================*/ 

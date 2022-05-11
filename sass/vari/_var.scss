@@ -1,0 +1,22 @@
+// FONT FAMILY STERT 
+$other_font:'Roboto', sans-serif;
+$main_font:'Open Sans', sans-serif;
+// FONT FAMILY STERT
+
+// FONT FAMILY STERT 
+$main_col:#fb527a;
+$h_col:#393636;
+// FONT FAMILY STERT 
+@mixin  btn {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: unset;
+    right: 0;
+    height: 100%;
+    width: 0%;
+    background-color: olive;
+    z-index: -1;
+    transition: all linear 0.4s;
+}
+ 

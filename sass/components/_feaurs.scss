@@ -1,0 +1,91 @@
+/*==========================
+        FEATURS CSS STERT 
+===========================*/ 
+#featura{
+    margin-bottom: 80px;
+    .featurs_text{
+        h3{     
+                font-family: "Roboto", sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+                margin: 20px 0;
+        }
+        P{
+            font-family: "Roboto", sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #393636;
+            line-height: 16px;
+        }
+    }
+    .feturs_item{
+      margin-top: 80px;
+    }
+    .featurs_img{
+     position: relative;
+   .mobile{
+    position: absolute;
+    left: -102px;
+    top: 8px;
+    height: 100%;
+    width: 100%;
+  }
+}
+.featura_icon{
+     ul{
+         li{
+             height: 50px;
+             width: 50px;
+             line-height: 50px;
+            border-radius: 50px;
+             background-color: gray;
+             text-align: right;
+             margin-right: 30px;
+             text-align: center !important;
+             cursor: pointer;
+     
+             &:hover{
+                background-color: #ff517b;
+            }
+             i{
+                 text-align: center;
+                 color: white;
+                 font-size: 20px;
+                 display: inline-block;  
+             }
+         }
+     }
+     .fw_text{
+     
+         h3{
+            font-size: 22px;
+            font-weight: 500;
+            color: $h_col;
+            font-family: $other_font;
+            margin-bottom: 10px;
+         }
+         h4{
+            font-size: 16px;
+            font-weight: 500;
+            color: $h_col;
+            font-family: $other_font;
+            margin-bottom: 10px; 
+         }
+         p{
+            font-weight: 400;
+            color: $h_col;
+            font-family: $other_font;
+            font-size: 11px;
+            line-height: 20px;
+         }
+     }
+}
+.left_part{
+    margin-bottom: 40px;
+}
+}
+/*==========================
+        FEATURS CSS ENDS 
+===========================*/ 
+
+

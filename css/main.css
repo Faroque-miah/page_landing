@@ -1,0 +1,1214 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+*, *::after, ::before {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a, a:hover {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+  line-height: 0.8;
+}
+
+/*==========================
+        COMMON CSS STERT 
+===========================*/
+#banenr {
+  background: url(../images/banner.jpg) no-repeat center/cover;
+  padding: 250px 0;
+  position: relative;
+  z-index: 9;
+}
+
+#banenr::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(76, 75, 79, 0.8);
+  z-index: -9;
+}
+
+#banenr .banner_text h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  font-size: 35px;
+  line-height: 35px;
+}
+
+#banenr .banner_text p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #393636;
+  margin: 15px 0;
+}
+
+#banenr .banner_text a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 50px;
+  text-transform: capitalize;
+  color: white;
+  width: 155px;
+  text-align: center;
+  background: orange;
+  position: relative;
+  z-index: 9;
+}
+
+#banenr .banner_text a:hover::before {
+  right: unset;
+  left: 0;
+  width: 100%;
+}
+
+#banenr .banner_text a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: unset;
+  right: 0;
+  height: 100%;
+  width: 0%;
+  background-color: olive;
+  z-index: -1;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+#banenr .banner_text a:hover::after {
+  right: 0;
+  left: unset;
+  width: 50%;
+}
+
+#banenr .banner_text a::after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 0;
+  position: absolute;
+  top: 0;
+  right: unset;
+  left: 0;
+  z-index: -9;
+  background-color: yellowgreen;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+/*==========================
+        COMMON CSS ENDS 
+===========================*/
+/*==========================
+        ABOUT CSS STERT 
+===========================*/
+#service .about_head h3 {
+  margin-top: 20px;
+  font-size: 35px;
+  font-weight: 500;
+  color: #393636;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+#service .about_item {
+  padding: 55px 55px 65px;
+  border: 2px solid #e2e3e2;
+}
+
+#service .about_item h3 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+#service .about_item p {
+  margin-top: 15px;
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+/*==========================
+        ABOUT CSS ENDS 
+===========================*/
+/*==========================
+        ICON CSS STERT 
+===========================*/
+#icon {
+  padding: 80px 0;
+  background-color: #f7f3f7;
+}
+
+#icon .icon_item {
+  background: #fff;
+  padding: 70px 40px 60px;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 8px #4C4B4F);
+          filter: drop-shadow(0 0 8px #4C4B4F);
+}
+
+#icon .icon_item:hover {
+  background-color: #ff517b;
+}
+
+#icon .icon_item:hover .iconee i {
+  color: white;
+}
+
+#icon .icon_item:hover .icon_text h3,
+#icon .icon_item:hover .icon_text p {
+  color: white;
+}
+
+#icon .icon_item .iconee i {
+  font-size: 20px;
+  color: #393636;
+  font-weight: bolder;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+#icon .icon_item .icon_text h3 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+#icon .icon_item .icon_text p {
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  line-height: 18px;
+  margin-top: 15px;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+/*==========================
+        ICON CSS ENDS 
+===========================*/
+/*==========================
+        TEAM CSS STERT 
+===========================*/
+#team {
+  padding: 80px 0;
+}
+
+#team .team_head {
+  margin-bottom: 15px;
+}
+
+#team .team_head h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+#team .team_head p {
+  font-weight: 400;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  line-height: 20px;
+  padding: 0 60px;
+}
+
+#team .team_item {
+  padding-bottom: 25px;
+}
+
+#team .team_img {
+  position: relative;
+  overflow: hidden;
+}
+
+#team .team_img:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#team .team_img:hover .team_overlay {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+#team .team_img img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+#team .team_img .team_overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 80%;
+  background-color: #ff517a91;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.5s cubic-bezier(0.62, 0.21, 0.45, 1.52);
+  transition: all 0.5s cubic-bezier(0.62, 0.21, 0.45, 1.52);
+}
+
+#team .team_img .team_overlay a i {
+  font-size: 16px;
+  color: white;
+  height: 30px;
+  width: 30px;
+  background-color: olive;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+#team .team_img .team_overlay a i:hover {
+  background-color: #4C4B4F;
+}
+
+#team .team_text h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+#team .team_text h4 {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+  margin: 15px 0;
+}
+
+#team .team_text p {
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+/*==========================
+        TEAM CSS ENDS 
+===========================*/
+/*==========================
+        FEATURS CSS STERT 
+===========================*/
+#featura {
+  margin-bottom: 80px;
+}
+
+#featura .featurs_text h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+#featura .featurs_text P {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #393636;
+  line-height: 16px;
+}
+
+#featura .feturs_item {
+  margin-top: 80px;
+}
+
+#featura .featurs_img {
+  position: relative;
+}
+
+#featura .featurs_img .mobile {
+  position: absolute;
+  left: -102px;
+  top: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+#featura .featura_icon ul li {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50px;
+  background-color: gray;
+  text-align: right;
+  margin-right: 30px;
+  text-align: center !important;
+  cursor: pointer;
+}
+
+#featura .featura_icon ul li:hover {
+  background-color: #ff517b;
+}
+
+#featura .featura_icon ul li i {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+}
+
+#featura .featura_icon .fw_text h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+#featura .featura_icon .fw_text h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+#featura .featura_icon .fw_text p {
+  font-weight: 400;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+#featura .left_part {
+  margin-bottom: 40px;
+}
+
+/*==========================
+        FEATURS CSS ENDS 
+===========================*/
+/*==========================
+        COMMON CSS STERT 
+===========================*/
+#blog {
+  padding: 40px 0 80px;
+  background-color: #f1f1f1;
+  margin: 80px 0 !important;
+}
+
+#blog .work_menu .menu_mix {
+  -webkit-box-shadow: 0 0 8px 0 gray;
+          box-shadow: 0 0 8px 0 gray;
+  width: 80%;
+  margin-bottom: 20px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#blog .work_menu .menu_mix li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #393636;
+  width: 25%;
+  background-color: #f1f1f1;
+  float: left;
+  padding: 12px 20px;
+}
+
+#blog .work_menu .menu_mix li.active {
+  background-color: #ff517b;
+}
+
+#blog .design_img {
+  width: 25% !important;
+}
+
+#blog .design_img img {
+  width: 100%;
+  mix-blend-mode: luminosity;
+  -webkit-transition: mix-blend-mode 500ms ease, -webkit-transform 500ms ease;
+  transition: mix-blend-mode 500ms ease, -webkit-transform 500ms ease;
+  transition: transform 500ms ease, mix-blend-mode 500ms ease;
+  transition: transform 500ms ease, mix-blend-mode 500ms ease, -webkit-transform 500ms ease;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#blog .design_img img:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  mix-blend-mode: normal;
+  -webkit-box-shadow: 0 0 8px 0 rgba(255, 81, 122, 0.705);
+          box-shadow: 0 0 8px 0 rgba(255, 81, 122, 0.705);
+}
+
+/*==========================
+        COMMON CSS ENDS 
+===========================*/
+/*==========================
+        testinonial CSS STERT 
+===========================*/
+#testi .testi_slider .testi_item .shape {
+  height: 100px;
+  width: 100%;
+}
+
+#testi .testi_slider .testi_item .testi_head {
+  padding: 0 0 40px;
+  background-color: #f1f1f1;
+  position: relative;
+}
+
+#testi .testi_slider .testi_item .testi_head .testi_img {
+  position: absolute;
+  top: -18%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#testi .testi_slider .testi_item .testi_head .testi_text p {
+  font-weight: 400;
+  color: #8c8c8c;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  font-style: italic;
+  padding-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#testi .testi_slider .testi_item .testi_head .testi_text h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+#testi .testi_slider .testi_item .testi_head .testi_text h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+
+#testi .testi_slider .testi_item .testi_head .testi_text ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px;
+}
+
+#testi .testi_slider .testi_item .testi_head .testi_text ul .op {
+  opacity: 0.5;
+}
+
+#testi .testi_slider .testi_item .testi_head .testi_text ul li i {
+  margin-right: 10px;
+}
+
+#testi .slick-dots {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 35px;
+}
+
+#testi .slick-dots li {
+  height: 12px;
+  width: 12px;
+  border: 1px solid #ff517b;
+  margin-right: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#testi .slick-dots li button {
+  font-size: 0;
+  border: none;
+  outline: 0;
+}
+
+#testi .slick-dots li.slick-active {
+  background-color: #ff517b;
+}
+
+/*==========================
+        testinonial CSS ENDS 
+===========================*/
+.star_shape {
+  position: relative;
+}
+
+.star_shape::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: -50px;
+  height: 15px;
+  width: 15px;
+  border: 2px solid #fb527a;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.star_shape::after {
+  content: '';
+  position: absolute;
+  top: 100px;
+  right: -50px;
+  height: 15px;
+  width: 15px;
+  border: 2px solid #fb527a;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation: golla  3s infinite alternate linear;
+          animation: golla  3s infinite alternate linear;
+}
+
+@-webkit-keyframes golla {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes golla {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/*==========================
+        pricing CSS STERT 
+===========================*/
+.pricing_head h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.pricing_head P {
+  font-weight: 400;
+  color: #8c8c8c;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  font-style: italic;
+  margin: 15px 30px;
+}
+
+.pricing {
+  margin: 50px 0;
+  text-align: center;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+.pricing .pricingTable-header {
+  color: #fff;
+  background-color: #ff517b;
+  padding: 25px 20px 60px;
+  margin: 0 0 10px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+}
+
+.pricing .pricingTable .title {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 10px;
+}
+
+.pricing .price-value .amount {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 50px;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+}
+
+.pricingTable .price-value .duration {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  display: block;
+  font-family: "Roboto", sans-serif;
+}
+
+.pricingTable .pricing-content {
+  padding: 0;
+  margin: 0 0 35px;
+  list-style: none;
+  display: inline-block;
+}
+
+.pricingTable .pricing-content li {
+  font-size: 16px;
+  text-transform: capitalize;
+  line-height: 30px;
+  padding: 5px 0 0;
+}
+
+.pricingTable .pricing-content li:after {
+  content: '';
+  background-color: #ff517b;
+  height: 2px;
+  width: 100%;
+  margin: 5px 0 0;
+  clear: both;
+  display: block;
+}
+
+.pricingTable .pricing-content li:last-child:after {
+  display: none;
+}
+
+.pricingTable .pricingTable-signup {
+  background-color: #ff517b;
+  padding: 10px 10px 9px;
+}
+
+.pricingTable .pricingTable-signup {
+  margin-bottom: 80px;
+}
+
+.pricingTable .pricingTable-signup a {
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.pricingTable .pricingTable-signup a:hover {
+  color: white;
+  text-shadow: 3px 3px 3px #8c8c8c;
+}
+
+/*==========================
+        pricing CSS ENDS 
+===========================*/
+/*==========================
+        PLAY  CSS STERT 
+===========================*/
+#play {
+  padding: 80px;
+}
+
+#play .play_text h3 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+#play .play_text h2 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+
+#vedio {
+  background: transparent;
+}
+
+#vedio .vedioeeee_overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 80px 0 230px;
+}
+
+#vedio .vedioeeee_overlay .vedio_text h3 {
+  font-size: 35px;
+  font-weight: 700;
+  white-space: 1px;
+  color: #fb527a;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+  margin-bottom: 25px;
+}
+
+#vedio .vedioeeee_overlay .vedio_icon {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#vedio .vedioeeee_overlay .vedio_icon i {
+  font-size: 30px;
+  font-weight: 700;
+  height: 70px;
+  width: 70px;
+  background-color: #fb527a;
+  border-radius: 50%;
+  line-height: 70px;
+}
+
+/*==========================
+        PLAY CSS ENDS 
+===========================*/
+/*==========================
+        COUBTER CSS STERT 
+===========================*/
+#counter {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 9999999999;
+}
+
+#counter .counter_item {
+  background-color: #f3f2f2;
+  padding: 70px 0;
+}
+
+#counter .golla {
+  overflow: hidden;
+  position: relative;
+}
+
+#counter .golla::before {
+  content: '';
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border: 15px solid #fb527a;
+  border-radius: 50%;
+  left: -36px;
+  top: -24px;
+  -webkit-animation: gulgol 1.5s linear   infinite alternate forwards;
+          animation: gulgol 1.5s linear   infinite alternate forwards;
+}
+
+#counter .golla_2 {
+  overflow: hidden;
+  position: relative;
+}
+
+#counter .golla_2::before {
+  content: '';
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border: 15px solid #fb527a;
+  border-radius: 50%;
+  right: -26px;
+  bottom: -24px;
+}
+
+#counter .counter_icon i {
+  font-size: 45px;
+  font-weight: 500;
+  color: #393636;
+}
+
+#counter .counter_text h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #393636;
+  margin: 20px 0;
+}
+
+#counter .counter_text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #393636;
+}
+
+#counter .counter_text .plash {
+  color: #fb527a;
+  font-size: 20px;
+  display: inline-block;
+}
+
+@-webkit-keyframes gulgol {
+  0% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+    border-color: orangered;
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    border-color: orange;
+  }
+}
+
+@keyframes gulgol {
+  0% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+    border-color: orangered;
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    border-color: orange;
+  }
+}
+
+/*==========================
+        COUBTER CSS ENDS 
+===========================*/
+/*==========================
+        BRAND CSS STERT 
+===========================*/
+#brand {
+  padding: 80px 0;
+  position: relative;
+}
+
+#brand .brand_text h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#brand .brand_text p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+#brand .brand_slider .brand_item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#brand .brand_slider .brand_item img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  width: 100%;
+}
+
+#brand .brand_slider .slick-center img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-box-shadow: 0 0 5px 0 gray;
+          box-shadow: 0 0 5px 0 gray;
+}
+
+/*==========================
+        BRAND CSS ENDS 
+===========================*/
+/*==========================
+        FEEDBACK CSS STERT 
+===========================*/
+#feed_back {
+  background-color: #f7f3f7;
+  padding-top: 45px;
+  position: relative;
+}
+
+#feed_back .head {
+  background-color: #f7f3f7;
+}
+
+#feed_back .head ul {
+  background-color: #f7f3f7;
+}
+
+#feed_back .head ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #393636;
+  margin-right: 10px;
+}
+
+#feed_back .head ul li i {
+  margin-right: 7px;
+  font-size: 11px;
+}
+
+#feed_back .mimi_img {
+  height: 75px;
+  width: 70px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 137px;
+  right: 0;
+  border: 2px solid #393636;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+#feed_back .mimi_img img {
+  width: 100%;
+}
+
+#feed_back .card-body .card-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#feed_back .card-body .card-title::before {
+  content: '';
+  position: absolute;
+  bottom: -11px;
+  left: 14%;
+  height: 3px;
+  width: 64px;
+  background-color: #8c8c8c;
+}
+
+#feed_back .card-body .card-text {
+  font-weight: 400;
+  color: #8c8c8c;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+/*==========================
+        FEEDBACK CSS ENDS 
+===========================*/
+.feed_img {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+  cursor: pointer;
+}
+
+.feed_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.feed_img:hover img {
+  -webkit-transform: scale(1.1) rotate(-5deg);
+          transform: scale(1.1) rotate(-5deg);
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+.feed_img:hover .feed_overlay {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.feed_img .feed_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translateY(-70px);
+          transform: translateY(-70px);
+  background-color: #130f0f81;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*==========================
+        FOOTER PART CSS STERT 
+===========================*/
+footer {
+  background-color: rgba(0, 0, 0, 0.753);
+  padding: 100px 0;
+}
+
+footer .footer_text {
+  text-align: center;
+}
+
+footer .footer_text h3 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #393636;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+footer .footer_icon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
+footer .footer_icon ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: aqua;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+footer .footer_icon ul li a {
+  display: inline-block;
+}
+
+footer .footer_icon ul li i {
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+}
+
+/*==========================
+        FOOTER PART CSS ENDS 
+===========================*/
+/*==========================
+        COMMON CSS STERT 
+===========================*/
+/*==========================
+        COMMON CSS ENDS 
+===========================*/
+/*# sourceMappingURL=main.css.map */

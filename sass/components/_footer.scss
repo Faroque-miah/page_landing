@@ -1,0 +1,49 @@
+/*==========================
+        FOOTER PART CSS STERT 
+===========================*/ 
+footer{
+    background-color: rgba(0, 0, 0, 0.753);
+    padding: 100px 0;
+    .footer_text{
+        text-align: center;
+        h3{
+            font-size: 32px;
+            font-weight: 500;
+            color: $h_col;
+            font-family: $other_font;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+    }
+    .footer_icon{
+        ul{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+          li{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 35px;
+              width: 35px;
+              line-height: 35px;
+              text-align: center;
+              background-color: aqua;
+               margin-right: 10px;
+               border-radius: 50%;
+              a{
+                display: inline-block; 
+              }
+            i{
+                font-size: 15px;
+                color: white;
+                font-weight: 500;
+             
+            }
+          }
+        }
+    }
+}
+/*==========================
+        FOOTER PART CSS ENDS 
+===========================*/ 

@@ -1,0 +1,64 @@
+/*==========================
+        ICON CSS STERT 
+===========================*/ 
+#icon{
+    padding: 80px 0;
+    background-color: #f7f3f7;
+    .icon_item{
+        background: #fff;
+        padding: 70px 40px 60px;
+        transition: all linear 0.4s;
+        cursor: pointer;
+        filter: drop-shadow( 0 0 8px #4C4B4F);
+        &:hover{
+            background-color: #ff517b;
+        }
+        &:hover{
+            .iconee{
+             i{
+                color: white;
+             }
+            }
+          .icon_text{
+              h3,
+              p{
+                  color: white;
+              }
+             
+          }
+        }
+        .iconee{
+            i{
+                font-size: 20px;
+                color: $h_col;
+                font-weight: bolder;
+                transition: all linear 0.4s;
+            }
+        }
+        .icon_text{
+            h3{
+                margin-top: 20px;
+                font-size: 16px;
+                font-weight: 500;
+                color: $h_col;
+                font-family: $other_font;
+                text-transform: uppercase;
+                transition: all linear 0.4s;
+            }
+            p{
+                font-weight: 500;
+                color: $h_col;
+                font-family: $other_font;
+                font-size: 11px;
+                line-height: 18px;
+                margin-top: 15px;
+                transition: all linear 0.4s;
+                padding: 0 20px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+/*==========================
+        ICON CSS ENDS 
+===========================*/ 
